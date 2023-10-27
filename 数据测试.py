@@ -1,0 +1,17 @@
+from xgtrader.unification_data_ths import unification_data_ths
+from qmt_trader.unification_data_qmt import unification_data_qmt
+from xgtrader.stock_data_ths import stock_data_ths
+from qmt_trader.stock_data_qmt import stock_data_qmt
+from xgtrader.etf_fund_data_ths import etf_fund_data_ths
+from qmt_trader.etf_fund_data_qmt import etf_fund_data_qmt
+from qmt_trader.bond_cov_data_qmt import bond_cov_data_qmt
+from xgtrader.bond_cov_data_ths import bond_cov_data_ths
+from xgtrader.tdx_data import tdx_data
+from trader_models.bond_cov_rend_strategy.bond_cov_rend_strategy import  bond_cov_rend_strategy
+from trader_tool.unification_data import unification_data
+from trader_models.bond_cov_rend_strategy.bond_cov_rend_strategy import bond_cov_rend_strategy
+from trader_models.etf_trend_strategy.etf_trend_strategy import etf_trend_strategy
+from xgtrader.xgtrader import xgtrader
+models=xgtrader()
+models.connect()
+models.position()

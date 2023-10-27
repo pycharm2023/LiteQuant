@@ -1,0 +1,17 @@
+from xgtrader.unification_data_ths import unification_data_ths
+from qmt_trader.unification_data_qmt import unification_data_qmt
+from xgtrader.stock_data_ths import stock_data_ths
+from qmt_trader.stock_data_qmt import stock_data_qmt
+from xgtrader.etf_fund_data_ths import etf_fund_data_ths
+from qmt_trader.etf_fund_data_qmt import etf_fund_data_qmt
+from qmt_trader.bond_cov_data_qmt import bond_cov_data_qmt
+from xgtrader.bond_cov_data_ths import bond_cov_data_ths
+from xgtrader.xgtrader import xgtrader
+from qmt_trader.qmt_trader_ths import qmt_trader_ths
+from trader_models.limit_trading_strategy.limit_trading_strategy import limit_trading_strategy
+from trader_models.bond_cov_popularity_strategy.bond_cov_popularity_strategy import bond_cov_popularity_strategy
+from trader_models.stock_sentiment_strategy.stock_sentiment_strategy import stock_sentiment_strategy
+models=stock_sentiment_strategy(trader_tool='qmt')
+models.update_all_data()
+
+        
